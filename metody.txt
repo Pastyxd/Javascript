@@ -1,0 +1,106 @@
+let method = prompt("Vyberte metodu (1-10):");
+
+switch (parseInt(method)) {
+  case 1:
+    // Sčítání
+    soucet();
+    break;
+  case 2:
+    // Odčítání
+    rozdil();
+    break;
+  case 3:
+    // Násobení
+    nasobeni();
+    break;
+  case 4:
+    // Dělení
+    deleni();
+    break;
+  case 5:
+    // Výpočet průměru
+    prumer();
+    break;
+  case 6:
+    // Mocnina
+    mocnina();
+    break;
+  case 7:
+    // Odmocnina
+    odmocnina();
+    break;
+  case 8:
+    // Součet textových řetězců
+    spojeniretezce();
+    break;
+  case 9:
+    // Maximum z pole čísel
+    maximum();
+    break;
+  case 10:
+    // Minimum z pole čísel
+    minimum();
+    break;
+  // Add more cases for additional methods
+}
+
+function soucet() {
+  let suma = 5 + 3;
+  console.log("Výsledek sčítání: " + suma);
+}
+
+function rozdil() {
+  let diff = 10 - 4;
+  console.log("Výsledek odčítání: " + diff);
+}
+
+function nasobeni() {
+  let nasobek = 2 * 6;
+  console.log("Výsledek násobení: " + nasobek);
+}
+
+function deleni() {
+  let delenec = 15 / 3;
+  console.log("Výsledek dělení: " + delenec);
+}
+
+function prumer() {
+  let cisla = [5, 7, 9, 3, 1];
+  let prumer = cisla.reduce((a, b) => a + b) / cisla.length;
+  console.log("Průměr čísel: " + prumer);
+}
+
+function mocnina() {
+  let base = 2;
+  let mocnitel = 3;
+  let vymocnitel = Math.pow(base, mocnitel);
+  console.log("Výsledek mocniny: " + vymocnitel);
+}
+
+function odmocnina() {
+  let cislo2 = 16;
+  let odmocnina = Math.sqrt(cislo2);
+  console.log("Odmocnina čísla: " + odmocnina);
+}
+
+function spojeniretezce() {
+  let text1 = "Hello";
+  let text2 = "World";
+  let vysledekt = text1 + " " + text2;
+  console.log("Výsledek spojení textu: " + vysledekt);
+}
+
+function maximum() {
+  let cisilka = [10, 5, 8, 12, 3];
+  let max = Math.max(...cisilka);
+  console.log("Maximum z pole čísel: " + max);
+}
+
+function minimum() {
+  let ciselka = [10, 5, 8, 12, 3];
+  let min = Math.min(...ciselka);
+  console.log("Minimum z pole čísel: " + min);
+}
+
+
+
